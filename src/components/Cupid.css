@@ -2,8 +2,21 @@
   position: fixed;
   cursor: pointer;
   z-index: 1000;
-  animation: floatDynamic 15s ease-in-out infinite;
   transition: transform 0.3s ease;
+}
+
+/* Desktop only - complex float animation */
+@media (min-width: 769px) {
+  .cupid {
+    animation: floatDynamic 15s ease-in-out infinite;
+  }
+}
+
+/* Mobile - simple gentle float */
+@media (max-width: 768px) {
+  .cupid {
+    animation: floatSimple 8s ease-in-out infinite;
+  }
 }
 
 .cupid:hover {
@@ -37,12 +50,28 @@
   }
 }
 
+/* Simple float for mobile */
+@keyframes floatSimple {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
 .cupid-icon {
   width: 120px;
   height: 120px;
   filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
-  animation: rotate 4s linear infinite;
   transition: all 0.3s ease;
+}
+
+/* Desktop only - rotate animation */
+@media (min-width: 769px) {
+  .cupid-icon {
+    animation: rotate 4s linear infinite;
+  }
 }
 
 .cupid-icon.clicked {
@@ -89,7 +118,13 @@
   text-align: center;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
   max-width: 80vw;
-  animation: pulse 1s ease-in-out infinite;
+}
+
+/* Desktop only - pulse animation */
+@media (min-width: 769px) {
+  .message-bubble {
+    animation: pulse 1s ease-in-out infinite;
+  }
 }
 
 @keyframes pulse {

@@ -143,10 +143,18 @@ function App() {
   return (
     <div className="app" onClick={handleAppClick}>
       {/* Audio elements */}
-      <audio ref={countdownMusicRef} loop>
+      <audio 
+        ref={countdownMusicRef} 
+        loop 
+        preload="metadata"
+      >
         <source src="/valentine-gift/background_music.mp3" type="audio/mpeg" />
       </audio>
-      <audio ref={valentineMusicRef} loop>
+      <audio 
+        ref={valentineMusicRef} 
+        loop 
+        preload="metadata"
+      >
         <source src="/valentine-gift/valentine_music.mp3" type="audio/mpeg" />
       </audio>
 
