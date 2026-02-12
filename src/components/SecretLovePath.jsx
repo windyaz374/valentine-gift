@@ -27,17 +27,8 @@ const SecretLovePath = () => {
   ];
 
   useEffect(() => {
-    // Load from localStorage
-    const stored = localStorage.getItem('lovePath');
-    if (stored) {
-      const data = JSON.parse(stored);
-      setAnswers(data.answers);
-      setStep(data.step);
-      setGameStarted(true);
-      if (data.completed) {
-        setCompleted(true);
-      }
-    }
+    // Reset on page refresh - clear localStorage
+    localStorage.removeItem('lovePath');
   }, []);
 
   const handleStartGame = () => {
