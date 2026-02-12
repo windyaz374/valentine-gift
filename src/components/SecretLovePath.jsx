@@ -15,9 +15,9 @@ const SecretLovePath = () => {
 
   // Predefined answers (hidden until unlock)
   const myAnswers = {
-    moment: "The first time we held hands under the stars, and I knew you were the one. ✨",
-    reason: "Because you make every ordinary day feel like magic. Your smile lights up my world! 💫",
-    target: "Build our dream home together and travel to all the places on our bucket list! 🏡✈️"
+    moment: "Our first trip to Đà Lạt for your birthday. The atmosphere felt incredibly romantic, and we truly enjoyed every moment. ✨",
+    reason: "You are a smart, capable girl who always puts in so much effort. Sometimes you can be a little difficult and a bit unreasonable, but I can handle that. Especially because being with you makes me feel truly happy 💫",
+    target: "Save an additional 600 million VND or more. Strive to do well in my personal work. Spend more time going out, having fun, and truly enjoying life 🏡✈️"
   };
 
   const prompts = [

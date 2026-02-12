@@ -8,9 +8,9 @@ const LoveMessage = ({ onComplete }) => {
   // Predefined love message
   const loveMessage = `My Dearest Valentine,
 
-Every moment with you feels like a beautiful dream come true. You are the sunshine that brightens my darkest days, the laughter that fills my heart with joy, and the love that makes every day worth living.
+I’m so sorry that I couldn’t be with you this Valentine’s Day, especially as it marks our 4th anniversary. I hope you can understand. Just two more years, and I promise we’ll return to our hometown together to celebrate Vietnamese New Year and many special occasions like this.  
 
-From the first time I saw you, I knew my life would never be the same. You've shown me what it means to truly love and be loved. Your smile, your kindness, your beautiful soul - everything about you makes me fall deeper in love every single day.
+Every moment with you feels like a beautiful dream come true. You are the sunshine that brightens my darkest days, the laughter that fills my heart with joy, and the love that makes every day worth living.
 
 Thank you for being my partner, my best friend, and my forever Valentine. I can't wait to create a lifetime of beautiful memories with you.
 
