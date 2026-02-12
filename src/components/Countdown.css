@@ -72,13 +72,7 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
-}
-
-/* Desktop only - backdrop filter */
-@media (min-width: 769px) {
-  .password-modal-overlay {
-    backdrop-filter: blur(5px);
-  }
+  backdrop-filter: blur(5px);
 }
 
 .password-modal {

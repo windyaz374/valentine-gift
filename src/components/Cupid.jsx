@@ -51,12 +51,6 @@ const SingleCupid = ({ message, index, isActive }) => {
 
 // Main Cupid Container
 const Cupid = ({ isActive = false }) => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    setIsMobile(window.innerWidth <= 768);
-  }, []);
-
   const messages = [
     "You make my heart skip a beat! 💓",
     "Love you to the moon and back! 🌙",
@@ -66,12 +60,9 @@ const Cupid = ({ isActive = false }) => {
     "Every love story is beautiful, but ours is my favorite! ❤️"
   ];
 
-  // Reduce Cupids on mobile (6 → 3)
-  const displayMessages = isMobile ? messages.slice(0, 3) : messages;
-
   return (
     <>
-      {displayMessages.map((message, index) => (
+      {messages.map((message, index) => (
         <SingleCupid key={index} message={message} index={index} isActive={isActive} />
       ))}
     </>
